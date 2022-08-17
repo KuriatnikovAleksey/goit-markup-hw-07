@@ -28,36 +28,37 @@
   <body>
     <!-- ~~~~~~~~~~~~ HEADER ~~~~~~~~~~~~ -->
     <header class="header">
-      <div class="container container-header">
-        <a href="./index.html" class="header-link link">
-          <span class="logo pr-color">Web</span
-          ><span class="logo sec-color">Studio</span>
+      <div class="container container--header">
+        <a href="./index.html" class="logo link">
+          Web<span class="logo__text--dark">Studio</span>
         </a>
         <nav class="nav">
-          <ul class="nav-list list">
-            <li class="nav-item">
-              <a href="./index.html" class="nav-link link current">Студия</a>
+          <ul class="nav__list list">
+            <li class="nav__item">
+              <a href="./index.html" class="nav__link nav__link--current link"
+                >Студия</a
+              >
             </li>
-            <li class="nav-item">
-              <a href="./portfolio.html" class="nav-link link">Портфолио</a>
+            <li class="nav__item">
+              <a href="./portfolio.html" class="nav__link link">Портфолио</a>
             </li>
-            <li class="nav-item">
-              <a href="" class="nav-link link">Контакты</a>
+            <li class="nav__item">
+              <a href="" class="nav__link link">Контакты</a>
             </li>
           </ul>
-          <ul class="contact-list list">
-            <li class="contact-item">
-              <a href="mailto:info@devstudio.com" class="contact-link link">
-                <svg class="contact-icon" width="16" height="12">
+          <ul class="contact__list list">
+            <li class="contact__item">
+              <a href="mailto:info@devstudio.com" class="contact__link link">
+                <svg class="contact__icon" width="16" height="12">
                   <use href="./images/sprite.svg#icon-email"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
 
-            <li class="contact-item">
-              <a href="tel:+380961111111" class="contact-link link">
-                <svg class="contact-icon" width="10" height="16">
+            <li class="contact__item">
+              <a href="tel:+380961111111" class="contact__link link">
+                <svg class="contact__icon" width="10" height="16">
                   <use href="./images/sprite.svg#icon-phone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -70,67 +71,69 @@
     <!-- ~~~~~~~~~~~~ MAIN ~~~~~~~~~~~~~~ -->
     <main>
       <!-- ~~~~~~~~~~ HERO SECTION ~~~~~~ -->
-      <section class="section-hero">
+      <section class="hero">
         <div class="container">
-          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button type="button" class="hero-button button" data-modal-open>
+          <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="hero__button button" data-modal-open>
             Заказать услугу
           </button>
         </div>
       </section>
       <!-- ~~~~~~~~~~ QUALITY SECTION ~~~ -->
-      <section class="section-quality section">
+      <section class="quality section">
         <div class="container">
           <!--Visually hidden-->
-          <h2 class="visually-hidden">Главные качества нашей компании</h2>
-          <ul class="quality-list list">
-            <li class="quality-item icon-antenna">
-              <div class="quality-item-thumb">
-                <svg class="quality-icon" width="70" height="70">
+          <h2 class="quality__title--visually-hidden">
+            Главные качества нашей компании
+          </h2>
+          <ul class="quality__list list">
+            <li class="quality__item">
+              <div class="item__thumb">
+                <svg class="item__icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-antenna"></use>
                 </svg>
               </div>
-              <h3 class="quality-title">Внимание к деталям</h3>
-              <p class="quality-text">
+              <h3 class="quality__title">Внимание к деталям</h3>
+              <p class="quality__text">
                 Идейные соображения, а также начало повседневной работы по
                 формированию позиции.
               </p>
             </li>
 
-            <li class="quality-item icon-clock">
-              <div class="quality-item-thumb">
-                <svg class="quality-icon" width="70" height="70">
+            <li class="quality__item">
+              <div class="item__thumb">
+                <svg class="item__icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-clock"></use>
                 </svg>
               </div>
-              <h3 class="quality-title">Пунктуальность</h3>
-              <p class="quality-text">
+              <h3 class="quality__title">Пунктуальность</h3>
+              <p class="quality__text">
                 Задача организации, в особенности же рамки и место обучения
                 кадров влечет за собой.
               </p>
             </li>
 
-            <li class="quality-item icon-diagram">
-              <div class="quality-item-thumb">
-                <svg class="quality-icon" width="70" height="70">
+            <li class="quality__item">
+              <div class="item__thumb">
+                <svg class="item__icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-diagram"></use>
                 </svg>
               </div>
-              <h3 class="quality-title">Планирование</h3>
-              <p class="quality-text">
+              <h3 class="quality__title">Планирование</h3>
+              <p class="quality__text">
                 Равным образом консультация с широким активом в значительной
                 степени обуславливает.
               </p>
             </li>
 
-            <li class="quality-item icon-astronaut">
-              <div class="quality-item-thumb">
-                <svg class="quality-icon" width="70" height="70">
+            <li class="quality__item">
+              <div class="item__thumb">
+                <svg class="item__icon" width="70" height="70">
                   <use href="./images/sprite.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="quality-title">Современные технологии</h3>
-              <p class="quality-text">
+              <h3 class="quality__title">Современные технологии</h3>
+              <p class="quality__text">
                 Значимость этих проблем настолько очевидна, что реализация
                 плановых заданий.
               </p>
@@ -139,41 +142,44 @@
         </div>
       </section>
       <!-- ~~~~~~~~~~ WORK SECTION ~~~~~~ -->
-      <section class="section-work section">
+      <section class="work section">
         <div class="container">
-          <h2 class="work-header">Чем мы занимаемся</h2>
-          <ul class="work-list list">
-            <li class="work-item">
-              <div class="work-item-thumb">
+          <h2 class="work__header">Чем мы занимаемся</h2>
+          <ul class="work__list list">
+            <li class="work__item">
+              <div class="item__thumb">
                 <img
+                  class="item__img"
                   src="./images/img1.jpg"
                   width="370"
                   height="294"
                   alt="Планшет и клавиатура"
                 />
-                <p class="work-item-text">Десктопные приложения</p>
+                <p class="item__text">Десктопные приложения</p>
               </div>
             </li>
-            <li class="work-item">
-              <div class="work-item-thumb">
+            <li class="work__item">
+              <div class="item__thumb">
                 <img
+                  class="item__img"
                   src="./images/img2.jpg"
                   width="370"
                   height="294"
                   alt="Ноутбук и смартфон"
                 />
-                <p class="work-item-text">Мобильные приложения</p>
+                <p class="item__text">Мобильные приложения</p>
               </div>
             </li>
-            <li class="work-item">
-              <div class="work-item-thumb">
+            <li class="work__item">
+              <div class="item__thumb">
                 <img
+                  class="item__img"
                   src="./images/img3.jpg"
                   width="370"
                   height="294"
                   alt="Планшет и монитор"
                 />
-                <p class="work-item-text">Дизайнерские решения</p>
+                <p class="item__text">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
@@ -490,9 +496,8 @@
     <footer class="footer">
       <div class="container container-footer">
         <div class="footer-address">
-          <a href="./index.html" class="footer-link link">
-            <span class="logo pr-color">Web</span
-            ><span class="logo sec-color-footer">Studio</span>
+          <a href="./index.html" class="logo logo__footer link">
+            Web<span class="logo__text--white">Studio</span>
           </a>
           <address class="address">
             <a
