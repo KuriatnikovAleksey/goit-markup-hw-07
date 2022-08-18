@@ -787,6 +787,7 @@ textarea {
 .form-fild:hover input,
 .form-fild:hover textarea {
   border-color: var(--hover-font-color);
+  outline-color: var(--hover-font-color);
 }
 .form-fild:focus-within .icon-form,
 .form-fild:hover .icon-form {
@@ -839,7 +840,7 @@ textarea {
   border-radius: 2px;
 
   transition-property: background-color, background-origin, border-color,
-    background-image;
+    background-image, border-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -849,6 +850,9 @@ textarea {
   border-color: #2196f3;
   background-image: url(../images/check.svg);
 }
+.checkbox:focus + .castom-checkbox {
+  border-color: #2196f3;
+}
 .terms {
   color: var(--secondary-font-color);
 }
@@ -856,7 +860,15 @@ textarea {
   margin-left: 3px;
 
   color: var(--primary-logo-color);
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-policy:focus {
+  outline-color: var(--hover-font-color);
 }
 .form-btn {
   min-width: 200px;
+  transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.form-btn:focus {
+  outline-color: var(--hover-font-color);
 }
