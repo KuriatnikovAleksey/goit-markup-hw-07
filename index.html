@@ -578,14 +578,19 @@
           </ul>
         </div>
         <div class="footer-form">
-          <h2 class="footer-header">Подпишитесь на рассылку</h2>
-          <form class="footer-subscribe">
-            <label class="form-fild-subscribe">
-              <input type="email" name="email" placeholder="E-mail" />
+          <h2 class="footer-form__header">Подпишитесь на рассылку</h2>
+          <form class="form-subscribe">
+            <label class="form-subscribe__label">
+              <input
+                class="form-subscribe__input"
+                type="email"
+                name="email"
+                placeholder="E-mail"
+              />
             </label>
-            <button type="submit" class="subscribe-btn">
+            <button type="submit" class="form-subscribe__btn">
               Подписаться
-              <svg class="icon-send" width="24" height="24">
+              <svg class="form-subscribe__icon" width="24" height="24">
                 <use href="./images/sprite.svg#icon-send"></use>
               </svg>
             </button>
@@ -594,49 +599,68 @@
       </div>
     </footer>
     <!-- ~~~~~~~~~~~~ BACKDROP ~~~~~~~~~~~~ -->
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop backdrop--is-hidden" data-modal>
       <div class="modal">
-        <button type="button" class="modal-close-btn" data-modal-close>
-          <svg class="icon-close" width="18" height="18">
+        <h2 class="modal__header">Оставьте свои данные, мы вам перезвоним</h2>
+        <button type="button" class="modal__btn-close" data-modal-close>
+          <svg class="modal__icon-close" width="18" height="18">
             <use href="./images/sprite.svg#icon-close"></use>
           </svg>
         </button>
         <form class="form-order">
-          <h2 class="form-order-header">
-            Оставьте свои данные, мы вам перезвоним
-          </h2>
-          <label class="form-fild">
-            <span class="fild-name">Имя</span>
-            <input type="text" name="name" />
-            <svg class="icon-form">
+          <label class="form-order__fild">
+            <span class="form-order__name">Имя</span>
+            <input class="form-order__input" type="text" name="name" required />
+            <svg class="form-order__icon">
               <use href="./images/sprite.svg#icon-person"></use>
             </svg>
           </label>
-          <label class="form-fild">
-            <span class="fild-name">Телефон</span>
-            <input type="tel" name="tel" />
-            <svg class="icon-form">
+          <label class="form-order__fild">
+            <span class="form-order__name">Телефон</span>
+            <input class="form-order__input" type="tel" name="tel" required />
+            <svg class="form-order__icon">
               <use href="./images/sprite.svg#icon-phone2"></use>
             </svg>
           </label>
-          <label class="form-fild">
-            <span class="fild-name">Почта</span>
-            <input type="email" name="mail" />
-            <svg class="icon-form icon-mail">
+          <label class="form-order__fild">
+            <span class="form-order__name">Почта</span>
+            <input
+              class="form-order__input"
+              type="email"
+              name="mail"
+              required
+            />
+            <svg class="form-order__icon">
               <use href="./images/sprite.svg#icon-email2"></use>
             </svg>
           </label>
-          <label class="form-fild">
-            <span class="fild-name">Комментарий</span>
-            <textarea name="text" placeholder="Введите текст"></textarea>
+          <label class="form-order__fild">
+            <span class="form-order__name">Комментарий</span>
+            <textarea
+              class="form-order__text"
+              name="text"
+              placeholder="Введите текст"
+            ></textarea>
           </label>
-          <label class="label">
-            <input class="checkbox" type="checkbox" name="policy" />
-            <span class="castom-checkbox"></span>
-            <span class="terms">Соглашаюсь с рассылкой и принимаю</span>
-            <a href="#" target="_blank" class="link-policy">Условия договора</a>
+          <label class="form-order__label">
+            <input
+              class="form-order__checkbox"
+              type="checkbox"
+              name="policy"
+              value="true"
+              required
+            />
+            <span class="form-order__castom-checkbox"></span>
+            <span class="form-order__terms"
+              >Соглашаюсь с рассылкой и принимаю</span
+            >
+            <a href="#" target="_blank" class="form-order__link-policy"
+              >Условия договора</a
+            >
           </label>
-          <button type="submit" class="button form-btn">Отправить</button>
+          <button type="submit" class="form-order__btn button">
+            Отправить
+          </button>
         </form>
       </div>
     </div>
