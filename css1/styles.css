@@ -190,7 +190,7 @@ textarea {
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
-  background-color: var(--secondary-bg-colo);
+  background-color: var(--secondary-bg-color);
   text-align: center;
   background-image: linear-gradient(
       to right,
