@@ -5,6 +5,12 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -320,7 +326,7 @@ body {
   letter-spacing: 0.03em;
 }
 
-.quality__title--visually-hidden {
+.visually-hidden, .quality__title--visually-hidden {
   position: absolute;
   white-space: nowrap;
   width: 1px;
@@ -474,7 +480,7 @@ h6 {
 }
 
 .hero {
-  min-width: 1600px;
+  max-width: 1600px;
   padding-top: 200px;
   padding-bottom: 200px;
   margin: 0 auto;
@@ -509,7 +515,7 @@ h6 {
 .quality__title {
   margin-bottom: 10px;
   font-weight: 700;
-  font-style: 14px;
+  font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
@@ -533,7 +539,7 @@ h6 {
 .work__header {
   margin-bottom: 50px;
   font-weight: 700;
-  font-style: 36px;
+  font-size: 36px;
   line-height: 1.17;
   text-align: center;
 }
@@ -605,13 +611,13 @@ h6 {
 .content__title {
   margin-bottom: 10px;
   font-weight: 500;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 1.19;
 }
 .content__text {
   margin-bottom: 16px;
   color: #757575;
-  font-style: 16px;
+  font-size: 16px;
   line-height: 1.19;
 }
 .content__list {
@@ -700,6 +706,10 @@ h6 {
 .footer__address {
   width: 231px;
   margin-right: 70px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer__link {
@@ -854,6 +864,7 @@ h6 {
   font-weight: 700;
   font-size: 20px;
   line-height: 1.15;
+  text-align: center;
   letter-spacing: 0.03em;
 }
 .modal__btn-close {

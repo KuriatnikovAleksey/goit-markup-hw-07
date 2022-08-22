@@ -5,6 +5,12 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -516,7 +522,7 @@ h6 {
   letter-spacing: 0.06em;
 }
 .card__text {
-  color: var(--secondary-font-color);
+  color: #757575;
   font-size: 16px;
   line-height: 1.88;
 }
@@ -525,7 +531,7 @@ h6 {
   position: relative;
   overflow: hidden;
 }
-.thumb_img {
+.thumb__img {
   display: block;
   max-width: 100%;
 }
@@ -571,6 +577,10 @@ h6 {
 .footer__address {
   width: 231px;
   margin-right: 70px;
+}
+
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .footer__link {

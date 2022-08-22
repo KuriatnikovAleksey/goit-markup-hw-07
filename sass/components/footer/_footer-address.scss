@@ -5,8 +5,12 @@
 .footer__list {
   @extend %list;
 }
+.footer__item:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer__link {
   @extend %link;
+
   display: block;
   font-style: normal;
   color: $white-font-color;
@@ -17,6 +21,7 @@
 
   &--grey {
     @extend %link;
+
     font-style: normal;
     color: $grey-font-color;
     transition-property: color;

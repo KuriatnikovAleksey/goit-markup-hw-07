@@ -36,7 +36,7 @@
     letter-spacing: 0.06em;
   }
   &__text {
-    color: var(--secondary-font-color);
+    color: $secondary-font-color;
 
     font-size: 16px;
     line-height: 1.88;
@@ -46,7 +46,7 @@
   position: relative;
   overflow: hidden;
 
-  &_img {
+  &__img {
     display: block;
     max-width: 100%;
   }
